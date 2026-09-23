@@ -58,9 +58,9 @@ if user_input := st.chat_input("우사기에게 말을 걸어보세요! (야하~
         full_response = ""
         
         try:
-            # 8. 우사기 캐릭터로 스트리밍 응답 요청 (모델 이름 유지)
+            # 8. 우사기 캐릭터로 스트리밍 응답 요청 (모델 이름 원본 유지)
             response = client.chat.completions.create(
-                model="gemini-2.5-flash-lite",
+                model="gemini-3.5-flash-lite",
                 messages=st.session_state.usagi_messages,
                 stream=True,
             )
