@@ -1,4 +1,4 @@
-import streamlit as "st"
+import streamlit as st
 from openai import OpenAI
 
 # 1. 핑구 분위기(북극과 얼음)를 내기 위한 페이지 설정
